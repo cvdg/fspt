@@ -2,3 +2,5 @@ packages:
   - podman
   - podman-compose
   - kubernetes-client
+
+ssh_authorized_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKfoFHXWOFc2QalqNbsgn/lHejw/9rlR+/esTdaeN0MN cees.van.de.griend@protonmail.com"

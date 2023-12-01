@@ -1,5 +1,11 @@
 ---
-- name: user 
+- name: user minikube
   user:
     name: minikube
     shell: /bin/bash
+
+- name: ssh authorized keys
+  authorized_key:
+    user: minikube
+    state: present
+    key: "{{ ssh_authorized_key }}"
