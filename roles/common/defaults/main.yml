@@ -4,6 +4,7 @@ packages:
   - curl
   - git
   - gnupg2
+  - sudo
   - tmux
   - vim-nox
 

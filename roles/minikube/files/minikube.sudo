@@ -1,0 +1,1 @@
+minikube ALL=(ALL) NOPASSWD: /usr/bin/podman
