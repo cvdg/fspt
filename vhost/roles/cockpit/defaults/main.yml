@@ -1,0 +1,11 @@
+packages:
+  - udisks2
+  - udisks2-bcache
+  - udisks2-btrfs
+  # - udisks2-doc
+  - udisks2-lvm2
+  - udisks2-zram
+  
+  - sscg
+  - cockpit
+  - cockpit-machines

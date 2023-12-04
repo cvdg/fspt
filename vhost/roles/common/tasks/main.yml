@@ -1,0 +1,4 @@
+---
+- include_tasks: authorized_key.yml
+- include_tasks: locale.yml
+- include_tasks: timezone.yml

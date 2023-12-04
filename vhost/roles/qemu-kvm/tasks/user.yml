@@ -1,0 +1,6 @@
+---
+- name: group libvirt-qemu
+  user:
+    name: "{{ user_name }}"
+    groups: libvirt-qemu
+    append: yes

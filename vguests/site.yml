@@ -3,5 +3,5 @@
   roles:
   - upgrade
   - common
-  - minikube
-
+  - qemu-kvm
+  # - minikube

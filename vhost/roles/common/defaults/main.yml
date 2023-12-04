@@ -1,0 +1,3 @@
+locale_default: "en_US.UTF-8"
+timezone_default: "Europe/Amsterdam"
+ssh_authorized_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKfoFHXWOFc2QalqNbsgn/lHejw/9rlR+/esTdaeN0MN cees.van.de.griend@protonmail.com"

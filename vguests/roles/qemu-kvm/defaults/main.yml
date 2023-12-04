@@ -1,0 +1,7 @@
+packages:
+  - qemu-system
+  - libvirt-daemon-system
+  - bridge-utils
+
+  - cockpit
+  - cockpit-machines

@@ -1,0 +1,6 @@
+packages:
+  - qemu-system
+  - libvirt-daemon-system
+  # - bridge-utils
+
+user_name: cees

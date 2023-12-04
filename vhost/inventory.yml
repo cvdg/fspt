@@ -1,0 +1,4 @@
+vhosts:
+  hosts:
+    srv00.kade3.home:
+      ansible_host: 192.168.129.64

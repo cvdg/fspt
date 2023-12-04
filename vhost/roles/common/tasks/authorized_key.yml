@@ -1,0 +1,6 @@
+---
+- name: authorized_key
+  authorized_key:
+    user: root
+    state: present
+    key: "{{ ssh_authorized_key }}"

@@ -1,0 +1,16 @@
+---
+- name: /etc/systemd/system/cockpit.socket.d/
+  file:
+    path: /etc/systemd/system/cockpit.socket.d/
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+
+- name: /etc/systemd/system/cockpit.socket.d/listen.conf
+  template:
+    src: listen.conf.j2
+    dest: /etc/systemd/system/cockpit.socket.d/listen.conf
+    owner: root
+    group: root
+    mode: 0644
