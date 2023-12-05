@@ -2,5 +2,7 @@
 - name: group libvirt-qemu
   user:
     name: "{{ user_name }}"
-    groups: libvirt-qemu
+    groups:
+      - kvm
+      - libvirt
     append: yes

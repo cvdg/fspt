@@ -1,8 +1,8 @@
 ---
 - hosts: vhosts
   roles:
-  # - upgrade
-  - common
-  - qemu-kvm
-  - cockpit
-  # - minikube
+    # - upgrade
+    - common
+    # - qemu-kvm
+    # - cockpit
+    # - minikube

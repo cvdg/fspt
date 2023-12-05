@@ -1,6 +1,6 @@
 packages:
   - qemu-system
   - libvirt-daemon-system
-  # - bridge-utils
+  - virtinst
 
 user_name: cees

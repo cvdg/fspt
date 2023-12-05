@@ -1,7 +1,7 @@
 ---
 - name: locale generate
   locale_gen:
-    name: "{{ locale_default }}"
+    name: "{{ common_locale }}"
     state: present
 
 - name: locale get current
@@ -14,5 +14,5 @@
     locale_lang: "{{ locale_status.stdout | regex_search('LANG=([^\n]+)', '\\1') | first }}"
 
 - name: locale set default
-  command: localectl set-locale "{{ locale_default }}"
-  changed_when: locale_lang != locale_default
+  command: localectl set-locale "{{ common_locale }}"
+  changed_when: locale_lang != common_locale

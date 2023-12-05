@@ -1,6 +1,12 @@
 ---
-- name: authorized_key
+- name: authorized_key root
   authorized_key:
     user: root
     state: present
-    key: "{{ ssh_authorized_key }}"
+    key: "{{ common_ssh_authorized_key }}"
+
+- name: authorized_key admin user
+  authorized_key:
+    user: "{{ common_admin_user }}"
+    state: present
+    key: "{{ common_ssh_authorized_key }}"

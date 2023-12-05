@@ -1,4 +1,4 @@
 ---
 - name: packages install
   package:
-    name: "{{ packages }}"
+    name: "{{ common_packages }}"

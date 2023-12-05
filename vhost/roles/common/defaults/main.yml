@@ -1,3 +1,16 @@
-locale_default: "en_US.UTF-8"
-timezone_default: "Europe/Amsterdam"
-ssh_authorized_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKfoFHXWOFc2QalqNbsgn/lHejw/9rlR+/esTdaeN0MN cees.van.de.griend@protonmail.com"
+---
+common_locale: "en_US.UTF-8"
+common_timezone: "Europe/Amsterdam"
+common_ssh_authorized_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKfoFHXWOFc2QalqNbsgn/lHejw/9rlR+/esTdaeN0MN cees.van.de.griend@protonmail.com"
+common_admin_user: "cees"
+
+common_packages:
+  - git 
+  - gnupg2
+  - sudo
+  - tmux
+  - vim-nox
+
+  - python3
+  - python3-pip
+  - python3-virtualenv
