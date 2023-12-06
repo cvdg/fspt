@@ -6,3 +6,15 @@
 - include_tasks: locale.yml
 - include_tasks: sudo.yml
 - include_tasks: timezone.yml
+
+- name: hostnamectl chassis
+  command: hostnamectl chassis
+  register: hostnamectl_chassis
+  changed_when: false
+
+- name: set fact hostnamectl_chassis
+  set_fact:
+    hostnamectl_chassis: "{{ hostnamectl_chassis.stdout | regex_search('([^\n]+)', '\\1') | first }}"
+
+- include_tasks: laptop.yml
+  when: hostnamectl_chassis == "laptop"
