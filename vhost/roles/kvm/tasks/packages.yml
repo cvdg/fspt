@@ -1,0 +1,4 @@
+---
+- name: packages install
+  package:
+    name: "{{ kvm_packages }}"

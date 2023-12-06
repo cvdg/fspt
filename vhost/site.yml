@@ -17,3 +17,7 @@
     - role: cockpit
       tags:
         - cockpit
+
+    - role: kvm
+      tags:
+        - kvm
