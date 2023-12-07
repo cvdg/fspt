@@ -1,6 +1,0 @@
-packages:
-  - qemu-system
-  - libvirt-daemon-system
-  - virtinst
-
-user_name: cees

@@ -9,20 +9,23 @@
 - name: /etc/systemd/logind.conf HandleLidSwitch
   lineinfile:
     path: /etc/systemd/logind.conf
-    regexp: '^#HandleLidSwitch='
-    line: 'HandleLidSwitch=ignore'
-  notify: restart systemd-logind
+    regexp: "^#HandleLidSwitch="
+    line: "HandleLidSwitch=ignore"
+  notify:
+    - restart systemd-logind
 
 - name: /etc/systemd/logind.conf HandleHandleLidSwitchExternalPowerLidSwitch
   lineinfile:
     path: /etc/systemd/logind.conf
-    regexp: '^#HandleLidSwitchExternalPower='
-    line: 'HandleLidSwitchExternalPower=ignore'
-  notify: restart systemd-logind
+    regexp: "^#HandleLidSwitchExternalPower="
+    line: "HandleLidSwitchExternalPower=ignore"
+  notify:
+    - restart systemd-logind
 
 - name: /etc/systemd/logind.conf HandleLidSwitchDocked
   lineinfile:
     path: /etc/systemd/logind.conf
-    regexp: '^#HandleLidSwitchDocked='
-    line: 'HandleLidSwitchDocked=ignore'
-  notify: restart systemd-logind
+    regexp: "^#HandleLidSwitchDocked="
+    line: "HandleLidSwitchDocked=ignore"
+  notify:
+    - restart systemd-logind
