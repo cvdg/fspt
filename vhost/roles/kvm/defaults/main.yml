@@ -2,6 +2,7 @@
 kvm_admin_user: "cees"
 
 kvm_packages:
+  - bridge-utils
   - guestfs-tools
   - libosinfo-bin
   - libvirt-daemon-system 

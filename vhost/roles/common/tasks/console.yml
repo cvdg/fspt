@@ -1,0 +1,18 @@
+---
+- name: /etc/default/console-setup CODESET
+  lineinfile:
+    path: /etc/default/console-setup
+    regexp: '^CODESET='
+    line: 'CODESET="Lat15"'
+  
+- name: /etc/default/console-setup FONTFACE
+  lineinfile:
+    path: /etc/default/console-setup
+    regexp: '^FONTFACE='
+    line: 'FONTFACE="Terminus"'
+
+- name: /etc/default/console-setup FONTSIZE
+  lineinfile:
+    path: /etc/default/console-setup
+    regexp: '^FONTSIZE='
+    line: 'FONTSIZE="16x32"'
