@@ -1,6 +1,0 @@
-
-servers:
-  hosts:
-    deb00.griend.dev:
-      ansible_host: 192.168.129.9
-

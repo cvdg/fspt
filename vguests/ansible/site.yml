@@ -1,7 +1,0 @@
----
-- hosts: all
-  roles:
-  - upgrade
-  - common
-  - qemu-kvm
-  # - minikube

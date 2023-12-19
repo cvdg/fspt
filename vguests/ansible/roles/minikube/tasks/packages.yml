@@ -1,4 +1,0 @@
----
-- name: packages install
-  package:
-    name: "{{ packages }}"

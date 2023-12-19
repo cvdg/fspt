@@ -1,8 +1,0 @@
----
-- name: copy minikube.sudo
-  copy:
-    src: minikube.sudo
-    dest: /etc/sudoers.d/minikube
-    owner: root
-    group: root
-    mode: '0644'
