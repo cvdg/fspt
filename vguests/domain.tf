@@ -4,14 +4,14 @@ resource "libvirt_domain" "domain" {
   memory  = var.guest_memory
   vcpu    = var.guest_cpus
   # machine = "pc-q35-5.2"
-  # qemu_agent = true
+  qemu_agent = true
 
   disk {
     volume_id = libvirt_volume.guest_image[count.index].id
   }
 
   network_interface {
-    network_name = "bridged-network"
+    network_name = "nwbridge"
     # bridge = "br0"
   }
 

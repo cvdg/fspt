@@ -1,13 +1,13 @@
 ---
-- name: /etc/network/interfaces
-  template:
-    src: interfaces.j2
-    dest: /etc/network/interfaces
-    owner: root
-    group: root
-    mode: 0644
-  notify:
-    - reboot
+# - name: /etc/network/interfaces
+#   template:
+#     src: interfaces.j2
+#     dest: /etc/network/interfaces
+#     owner: root
+#     group: root
+#     mode: 0644
+#   notify:
+#     - reboot
 
 - name: /etc/modules-load.d/modules.conf
   lineinfile:

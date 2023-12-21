@@ -5,7 +5,7 @@ variable "debian_cloud_image" {
 }
 
 variable "guest_pool" {
-  default     = "qcow2"
+  default     = "default"
   description = "Default pool for images"
   type        = string
 }
