@@ -3,12 +3,5 @@
 
 - include_tasks: network.yml
 - include_tasks: user.yml
+- include_tasks: security.yml
 - include_tasks: tuned.yml
-
-- name: /etc/libvirt/qemu.conf
-  lineinfile:
-    path: /etc/libvirt/qemu.conf
-    regexp: "^#security_driver ="
-    line: "security_driver = none"
-  notify:
-    - restart libvirtd

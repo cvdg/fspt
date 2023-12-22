@@ -2,7 +2,3 @@ vhosts:
   hosts:
     srv00.kade3.home:
       ansible_host: 192.168.129.64
-      ipv4_interface: enp3s0f1
-      ipv4_address: 192.168.129.64
-      ipv4_netmask: 255.255.255.0
-      ipv4_gateway: 192.168.129.1
