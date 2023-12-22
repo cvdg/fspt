@@ -17,7 +17,7 @@ variable "guest_count" {
 }
 
 variable "guest_disk_size" {
-  default     = 32 * 1024 * 1024 * 1024
+  default     = 16 * 1024 * 1024 * 1024
   description = "Disk size in bytes"
   type        = number
 }
