@@ -1,7 +1,7 @@
 output "ips" {
   value = (zipmap(
     libvirt_domain.domain.*.name,
-  libvirt_domain.domain.*.network_interface.0.addresses.0))
+  libvirt_domain.domain.*.network_interface.0.addresses))
 }
 
 output "password" {

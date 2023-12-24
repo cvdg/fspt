@@ -11,7 +11,7 @@ variable "guest_pool" {
 }
 
 variable "guest_count" {
-  default     = 2
+  default     = 3
   description = "number of guests"
   type        = number
 }

@@ -6,6 +6,10 @@ resource "libvirt_domain" "domain" {
   # machine = "pc-q35-5.2"
   qemu_agent = true
 
+  cpu {
+    mode = "host-passthrough"
+  }
+
   disk {
     volume_id = libvirt_volume.guest_image[count.index].id
   }
